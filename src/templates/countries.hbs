@@ -1,0 +1,16 @@
+{{!-- <a class='gallery__item' href='{{original}}'>
+    <img class='gallery__image' src='{{preview}}' alt='{{description}}' />
+  </a> --}}
+
+{{#each this}}
+  <li class='country__item'>
+    <img
+      class='country__image'
+      src='{{flags.svg}}'
+      alt='{{name.official}}'
+      width='30px'
+      height='20px'
+    />
+    <b class='named__country'>{{name.official}}</b>
+  </li>
+{{/each}}
