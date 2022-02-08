@@ -33,13 +33,11 @@ function onInputChange(e) {
 function createElemenst(name) {
   if (name.length > 10) {
     Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
-    console.log(name);
   } else if (name.length >= 2 && name.length < 10) {
     cityListEl.innerHTML = murkupListCountries(name);
     cityInfoEl.innerHTML = '';
   } else {
     cityInfoEl.innerHTML = murkupInfoCountries(name);
     cityListEl.innerHTML = '';
-    console.log(name);
   }
 }
